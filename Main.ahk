@@ -205,6 +205,8 @@ Return
 !+y::Send, ^+y
 !z::Send, ^z
 !+z::Send, ^+z
+!/::Send, ^/
+!+/::Send, !^/
 
 ; Win -> Alt
 ; まずはアルファベットのみ
