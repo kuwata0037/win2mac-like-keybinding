@@ -1,16 +1,132 @@
 #SingleInstance, Force
+SendMode Input
+SetWorkingDir, %A_ScriptDir%
 
-#Include, %A_ScriptDir%\lib\IME.ahk
 
 ;-------------------------------
 ; IME 設定
 ;-------------------------------
-;; 上部メニューがアクティブになるのを抑制
-*~LAlt::Send {Blind}{vk07}
-*~RAlt::Send {Blind}{vk07}
+#Include, %A_ScriptDir%\lib\IME.ahk
 
-;; IME off
-LAlt Up::IME_SET(0)
+; 主要なキーを HotKey に設定し、何もせずパススルーする
+; これがないと Ctrl を修飾キーとしたコマンドを打つと、意図せず IME が変換されてしまう。
+*~a::
+*~b::
+*~c::
+*~d::
+*~e::
+*~f::
+*~g::
+*~h::
+*~i::
+*~j::
+*~k::
+*~l::
+*~m::
+*~n::
+*~o::
+*~p::
+*~q::
+*~r::
+*~s::
+*~t::
+*~u::
+*~v::
+*~w::
+*~x::
+*~y::
+*~z::
+*~1::
+*~2::
+*~3::
+*~4::
+*~5::
+*~6::
+*~7::
+*~8::
+*~9::
+*~0::
+*~F1::
+*~F2::
+*~F3::
+*~F4::
+*~F5::
+*~F6::
+*~F7::
+*~F8::
+*~F9::
+*~F10::
+*~F11::
+*~F12::
+*~`::
+*~~::
+*~!::
+*~@::
+*~#::
+*~$::
+*~%::
+*~^::
+*~&::
+*~*::
+*~(::
+*~)::
+*~-::
+*~_::
+*~=::
+*~+::
+*~[::
+*~{::
+*~]::
+*~}::
+*~\::
+*~|::
+*~;::
+*~'::
+*~"::
+*~,::
+*~<::
+*~.::
+*~>::
+*~/::
+*~?::
+*~Esc::
+*~Tab::
+*~Space::
+*~Left::
+*~Right::
+*~Up::
+*~Down::    
+*~Enter::
+*~PrintScreen::
+*~Delete::
+*~Home::
+*~End::
+*~PgUp::
+*~PgDn::
+    Return
 
-;; IME on
-RAlt Up::IME_SET(1)
+; 上部メニューがアクティブになるのを抑制
+; これがないと Ctrl 空打ちで IME が変換されない
+*~LCtrl::Send {Blind}{vk07}
+*~RCtrl::Send {Blind}{vk07}
+
+; 左 Ctrl 空打ちで IME を OFF
+LCtrl up::
+    if (A_PriorHotkey == "*~LCtrl")
+    {
+        IME_SET(0)
+    }
+    Return
+
+; 右 Ctrl 空打ちで IME を ON
+RCtrl up::
+    if (A_PriorHotkey == "*~RCtrl")
+    {
+        IME_SET(1)
+    }
+    Return
+
+
+;-------------------------------
+; KeyBind 設定
+;-------------------------------
