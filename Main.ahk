@@ -2,7 +2,6 @@
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
-
 ;-------------------------------
 ; IME 設定
 ;-------------------------------
@@ -95,7 +94,7 @@ SetWorkingDir, %A_ScriptDir%
 *~Left::
 *~Right::
 *~Up::
-*~Down::    
+*~Down:: 
 *~Enter::
 *~PrintScreen::
 *~Delete::
@@ -103,7 +102,7 @@ SetWorkingDir, %A_ScriptDir%
 *~End::
 *~PgUp::
 *~PgDn::
-    Return
+Return
 
 ; 上部メニューがアクティブになるのを抑制
 ; これがないと Alt 空打ちで IME が変換されない
@@ -116,7 +115,7 @@ LAlt up::
     {
         IME_SET(0)
     }
-    Return
+Return
 
 ; 右 Alt 空打ちで IME を ON
 RAlt up::
@@ -124,7 +123,7 @@ RAlt up::
     {
         IME_SET(1)
     }
-    Return
+Return
 
 
 ;-------------------------------
