@@ -145,6 +145,11 @@ Return
 ^+h::Send, +{BS}
 ^d::Send, {Del}
 ^+d::Send, +{Del}
+^k::
+    Send, {ShiftDown}{End}{ShiftUp}
+    Sleep, 50 ;[ms] this value depends on your environment
+    Send, ^x
+Return
 
 ; Alt -> Ctrl
 ; まずは アルファベットのみ
