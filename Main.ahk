@@ -240,7 +240,7 @@ Return
 #r::Send, !r
 #+r::Send, !+r
 #s::Send, !s
-#+s::Send, !+s
+; #+s::Send, !+s
 #t::Send, !t
 #+t::Send, !+t
 #u::Send, !u
