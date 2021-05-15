@@ -246,7 +246,7 @@ Return
 #+p::Send, !+p
 #q::Send, !q
 #+q::Send, !+q
-#r::Send, !r
+; #r::Send, !r
 #+r::Send, !+r
 #s::Send, !s
 ; #+s::Send, !+s
