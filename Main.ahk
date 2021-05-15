@@ -106,21 +106,21 @@ SetWorkingDir, %A_ScriptDir%
     Return
 
 ; 上部メニューがアクティブになるのを抑制
-; これがないと Ctrl 空打ちで IME が変換されない
-*~LCtrl::Send {Blind}{vk07}
-*~RCtrl::Send {Blind}{vk07}
+; これがないと Alt 空打ちで IME が変換されない
+*~LAlt::Send {Blind}{vk07}
+*~RAlt::Send {Blind}{vk07}
 
-; 左 Ctrl 空打ちで IME を OFF
-LCtrl up::
-    if (A_PriorHotkey == "*~LCtrl")
+; 左 Alt 空打ちで IME を OFF
+LAlt up::
+    if (A_PriorHotkey == "*~LAlt")
     {
         IME_SET(0)
     }
     Return
 
-; 右 Ctrl 空打ちで IME を ON
-RCtrl up::
-    if (A_PriorHotkey == "*~RCtrl")
+; 右 Alt 空打ちで IME を ON
+RAlt up::
+    if (A_PriorHotkey == "*~RAlt")
     {
         IME_SET(1)
     }
