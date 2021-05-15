@@ -125,7 +125,23 @@ RAlt up::
     }
 Return
 
-
 ;-------------------------------
 ; KeyBind 設定
 ;-------------------------------
+; Emacs like
+^f::Send, {Right}
+^+f::Send, +{Right}
+^b::Send, {Left}
+^+b::Send, +{Left}
+^p::Send, {Up}
+^+p::Send, +{Up}
+^n::Send, {Down}
+^+n::Send, +{Down}
+^a::Send, {Home}
+^+a::Send, +{Home}
+^e::Send, {End}
+^+e::Send, +{End}
+^h::Send, {BS}
+^+h::Send, +{BS}
+^d::Send, {Del}
+^+d::Send, +{Del}
