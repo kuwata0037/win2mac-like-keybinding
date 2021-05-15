@@ -8,5 +8,6 @@ Windows で Mac ライクなキーバインドを使用するための個人用�
 ## 必要な環境
 
 - Windows 10
+- US 配列キーボード
 - [AutoHotkey](https://www.autohotkey.com/)
 
