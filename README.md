@@ -9,5 +9,7 @@ Windows で Mac ライクなキーバインドを使用するための個人用�
 
 - Windows 10
 - US 配列キーボード
+    - HHKB
+        - SW1, SW3, SW5 を ON
 - [AutoHotkey](https://www.autohotkey.com/)
 
