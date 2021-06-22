@@ -129,27 +129,118 @@ Return
 ; KeyBind 設定
 ;-------------------------------
 ; Emacs like
-^f::Send, {Right}
-^+f::Send, +{Right}
-^b::Send, {Left}
-^+b::Send, +{Left}
-^p::Send, {Up}
-^+p::Send, +{Up}
-^n::Send, {Down}
-^+n::Send, +{Down}
-^a::Send, {Home}
-^+a::Send, +{Home}
-^e::Send, {End}
-^+e::Send, +{End}
-^h::Send, {BS}
-^+h::Send, +{BS}
-^d::Send, {Del}
-^+d::Send, +{Del}
+use_emacs_like_keybind() {
+    IfWinActive,ahk_exe WindowsTerminal.exe
+        Return 0
+
+    Return 1
+}
+
+^f::
+    If use_emacs_like_keybind()
+        Send, {Right}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+f::
+    IF use_emacs_like_keybind()
+        Send, +{Right}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^b::
+    If use_emacs_like_keybind()
+        Send, {Left}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+b::
+    If use_emacs_like_keybind()
+        Send, +{Left}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^p::
+    If use_emacs_like_keybind()
+        Send, {Up}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+p::
+    If use_emacs_like_keybind()
+        Send, +{Up}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^n::
+    If use_emacs_like_keybind()
+        Send, {Down}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+n::
+    If use_emacs_like_keybind()
+        Send, +{Down}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^a::
+    If use_emacs_like_keybind()
+        Send, {Home}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+a::
+    If use_emacs_like_keybind()
+        Send, +{Home}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^e::
+    If use_emacs_like_keybind()
+        Send, {End}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+e::
+    If use_emacs_like_keybind()
+        Send, +{End}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^h::
+    If use_emacs_like_keybind()
+        Send, {BS}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+h::
+    If use_emacs_like_keybind()
+        Send, +{BS}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^d::
+    If use_emacs_like_keybind()
+        Send, {Del}
+    Else
+        Send, %A_ThisHotkey%
+    Return
+^+d::
+    If use_emacs_like_keybind()
+        Send, +{Del}
+    Else
+        Send, %A_ThisHotkey%
+    Return
 ^k::
-    Send, {ShiftDown}{End}{ShiftUp}
-    Sleep, 50 ;[ms] this value depends on your environment
-    Send, ^x
-Return
+    If use_emacs_like_keybind() {
+        Send, {ShiftDown}{End}{ShiftUp}
+        Sleep, 50 ;[ms] this value depends on your environment
+        Send, ^x
+    }
+    Else
+        Send, %A_ThisHotkey%
+    Return
 
 ; Alt -> Ctrl
 ; まずは アルファベットのみ
