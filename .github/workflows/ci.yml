@@ -1,0 +1,14 @@
+name: CI
+
+on: push
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: nekocodeX/GitHub-Action-Ahk2Exe@v1.1.0
+        with:
+          in: win2mac-like-keybinding.ahk
