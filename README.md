@@ -12,6 +12,14 @@ Windowsで Mac ライクなキーバインドを使用するための個人用�
   - [REALFORCE R2 PFU Limited Edition](https://www.pfu.ricoh.com/rfkeyboard/)
     - [Ctrl2Cap](https://learn.microsoft.com/ja-jp/sysinternals/downloads/ctrl2cap) を有効化
 
+## 使用方法
+
+1. [最新のリリースページ](https://github.com/kuwata0037/win2mac-like-keybinding/releases/latest) から `win2mac-like-keybinding.exe` をダウンロードする
+2. `Win + R` を押し、「ファイル名を指定して実行」で `shell:startup` と入力し実行する
+3. 開かれたフォルダに、ダウンロードした `win2mac-like-keybinding.exe` を移動する
+   - これにより、次回以降の起動時に自動で `win2mac-like-keybinding.exe` が起動するようになる
+4. 移動した `win2mac-like-keybinding.exe` をダブルクリックし起動する
+
 ## 機能
 
 ### キーバインド
@@ -54,7 +62,7 @@ Windowsで Mac ライクなキーバインドを使用するための個人用�
 | Win + [a-z]           | Alt + [a-z]            |
 | Win + Shift + [a-z]   | Alt + Shift + [a-z]    |
 
-ただし、下記キーバンドは例外的に無効化してある。
+ただし、下記キーバンドは例外的に無効化しています。
 
 - Win + r
   - 「ファイル名を指定して実行」を呼び出すショートカットとバッティングするため。
