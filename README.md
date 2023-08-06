@@ -1,15 +1,16 @@
 # Win2Mac Like Keybinding
 
-Windows で Mac ライクなキーバインドを使用するための個人用キーバインド設定です。
-主に AutoHotkey を使用しています。
+Windowsで Mac ライクなキーバインドを使用するための個人用キーバインド設定です。
+主に [AutoHotkey](https://www.autohotkey.com/) を使用しています。
 
-## 必要な環境
+## 動作環境
 
 - Windows 10
 - US 配列キーボード
-  - HHKB
+  - [HHKB](https://happyhackingkb.com/jp/)
     - SW1, SW3, SW5 を ON
-- [AutoHotkey](https://www.autohotkey.com/)
+  - [REALFORCE R2 PFU Limited Edition](https://www.pfu.ricoh.com/rfkeyboard/)
+    - [Ctrl2Cap](https://learn.microsoft.com/ja-jp/sysinternals/downloads/ctrl2cap) を有効化
 
 ## 機能
 
