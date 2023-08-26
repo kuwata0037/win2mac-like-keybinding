@@ -59,7 +59,7 @@ Windowsで Mac ライクなキーバインドを使用するための個人用�
 
 | Keybinding            | Function               |
 | --------------------- | ---------------------- |
-| Alt + [a-z/,]         | Ctrl + [a-z/,]         |
+| Alt + [a-z/,{Enter}]  | Ctrl + [a-z/,{Enter}]  |
 | Alt + Shift + [a-z/,] | Ctrl + Shift + [a-z/,] |
 | Win + [a-z]           | Alt + [a-z]            |
 | Win + Shift + [a-z]   | Alt + Shift + [a-z]    |
