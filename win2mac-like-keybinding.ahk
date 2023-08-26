@@ -297,9 +297,10 @@ use_emacs_like_keybind() {
 !z::Send, ^z
 !+z::Send, ^+z
 !/::Send, ^/
-!+/::Send, !^/
+!+/::Send, ^+/
 !,::Send, ^,
-!+,::Send, !^,
+!+,::Send, ^+,
+!Enter::Send, ^{Enter}
 
 ; Win -> Alt
 ; まずはアルファベットのみ
