@@ -1,5 +1,7 @@
 # Win2Mac Like Keybinding
 
+[![CI](https://github.com/kuwata0037/win2mac-like-keybinding/actions/workflows/ci.yaml/badge.svg)](https://github.com/kuwata0037/win2mac-like-keybinding/actions/workflows/ci.yaml)
+
 Windowsで Mac ライクなキーバインドを使用するための個人用キーバインド設定です。
 主に [AutoHotkey](https://www.autohotkey.com/) を使用しています。
 
