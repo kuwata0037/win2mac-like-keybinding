@@ -300,6 +300,7 @@ use_emacs_like_keybind() {
 !+/::Send, !^/
 !,::Send, ^,
 !+,::Send, !^,
+!Enter::Send, ^{Enter}
 
 ; Win -> Alt
 ; まずはアルファベットのみ
