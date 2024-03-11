@@ -14,7 +14,7 @@ jobs:
         uses: nekocodeX/GitHub-Action-Ahk2Exe@v1.1.0
         with:
           in: win2mac-like-keybinding.ahk
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
         with:
           files: win2mac-like-keybinding.exe
           generate_release_notes: true
