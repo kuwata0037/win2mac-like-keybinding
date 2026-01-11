@@ -2,15 +2,15 @@ name: CI
 
 on:
   push:
-    branches:
-      - "*"
 
 jobs:
   ahk:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Compile AutoHotKey
-        uses: nekocodeX/GitHub-Action-Ahk2Exe@v1.1.0
+      - name: Compile AutoHotkey
+        uses: benmusson/ahk2exe-action@v1.2.0
         with:
           in: win2mac-like-keybinding.ahk
+          ahk-tag: v1.1.37.02
+          ahk2exe-tag: Ahk2Exe1.1.37.02a0a
