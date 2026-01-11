@@ -2,6 +2,8 @@ name: CI
 
 on:
   push:
+    branches:
+      - "**"
 
 jobs:
   ahk:
@@ -14,3 +16,4 @@ jobs:
           in: win2mac-like-keybinding.ahk
           ahk-tag: v1.1.37.02
           ahk2exe-tag: Ahk2Exe1.1.37.02a0a
+          github-token: ${{ secrets.GITHUB_TOKEN }}
