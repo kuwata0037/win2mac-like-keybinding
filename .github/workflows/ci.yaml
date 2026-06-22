@@ -9,7 +9,7 @@ jobs:
   ahk:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Compile AutoHotkey
         uses: benmusson/ahk2exe-action@v1.2.0
         with:
